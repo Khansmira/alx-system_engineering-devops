@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
 # Parses Apache log files in list format
 if [ -e "apache-access.log" ]; then
-    awk '{print $1, $9}' "apache-access.log" | sort | uniq -c | sort -nr | awk '{print $1, $2, $3}'
-else
-    echo "The apache-access.log file does not exist in the current directory."
-fi
-
+    awk '{print $1, $9}' "apache-access.log" | sort | uniq -c | sort -rn
