@@ -5,7 +5,7 @@ j=0
 while [ $j -lt 10 ];
 do
 	echo "Best School"
-	if [ $j -eq 9 ];
+	if [ $j -eq 8 ];
 	then
 		echo "Hi"
 	fi
