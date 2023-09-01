@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Extracts ip and status code from apache access file
+if [ -e "apache-access.log" ]; then
+    awk '{print $1, $9}' "apache-access.log"
+else
+    echo "The apache-access.log file does not exist in the current directory."
+fi
