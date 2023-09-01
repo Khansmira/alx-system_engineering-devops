@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#This Script uses while, if and elif to display a 10 line string of Best school
+#However on the 4th loop iteration, it displays goodluck
+#And for the 8th loop iteration. it displays bad luck
+#The other iterations remain Best School
+j=0
+
+while [ $j -lt 10 ];
+do
+	if [ $j -eq 3 ];
+	then
+		echo "bad luck"
+	elif [ $j -eq 7 ];
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	((j++))
+done
