@@ -3,7 +3,7 @@
 # But it displays "bad luck from China" for the 4th loop iteration
 # dispalys "bad luck from Japan" for the 9th loop iteration
 # And displays "bad luck from Italy" for the 17th loop iteration
-i=0
+i=1
 
 while [ $i -le 20 ]
 do
